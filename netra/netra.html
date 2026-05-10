@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Netra 🌸</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:'Outfit',sans-serif;
+  color:white;
+  overflow-x:hidden;
+  background:black;
+}
+
+.section{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:50px 7%;
+  position:relative;
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 1s ease;
+}
+
+.section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.bg{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  filter:brightness(0.4);
+
+  z-index:0;
+}
+
+.content{
+  position:relative;
+  z-index:1;
+  max-width:900px;
+
+  background:rgba(0,0,0,0.35);
+  padding:30px;
+  border-radius:25px;
+  backdrop-filter:blur(8px);
+}
+
+h1,h2{
+  font-family:'Cinzel',serif;
+  font-size:clamp(30px,7vw,60px);
+  margin-bottom:20px;
+}
+
+p{
+  font-size:clamp(16px,4vw,22px);
+  line-height:1.9;
+}
+
+.music{
+  position:fixed;
+  top:15px;
+  right:15px;
+  background:black;
+  padding:10px 15px;
+  border-radius:20px;
+  cursor:pointer;
+  z-index:10;
+  font-size:14px;
+}
+
+.secret{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  font-size:12px;
+  opacity:0.5;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .section{
+    padding:40px 6%;
+  }
+
+  .content{
+    padding:22px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="music" onclick="toggleMusic()">
+🎵 special song for special girl
+</div>
+
+<div class="secret" onclick="alert('ok now you really need to give me 10 😌')">
+oh you found it?
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+
+<!-- CHANGE SONG NAME HERE -->
+<source src="song.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- ================= SECTION 1 ================= -->
+
+<div class="section">
+
+  <!-- bg1 -->
+  <div class="bg" style="background-image:url('bg1.jpg');"></div>
+
+  <div class="content">
+
+    <h1>Hello Netra ji ;)</h1>
+
+    <p>
+      Apke liye special ek naya page banaya hai along with new changes....
+      <br><br>
+      So here you go ji.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ================= SECTION 2 ================= -->
+
+<div class="section">
+
+  <!-- bg2 -->
+  <div class="bg" style="background-image:url('bg2.jpg');"></div>
+
+  <div class="content">
+
+    <h2>Let’s start simple</h2>
+
+    <p>
+      Since you know few things here I'll share other things now
+      <br><br>
+
+      Favorite hindi movie- Sonu ke Titu ki Sweety
+      <br><br>
+
+      Favorite gujarati song- Ghoome ghoome jaaye
+      <br><br>
+
+      Fav person- Maybeeeee you hehe (I mean in future)
+      <br><br>
+
+      Things I make really good- almost badhuj aflatoon bane 😌
+      <br><br>
+
+      Another fav thing to do - gaming or watching series
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ================= SECTION 3 ================= -->
+
+<div class="section">
+
+  <!-- bg3 -->
+  <div class="bg" style="background-image:url('bg3.jpg');"></div>
+
+  <div class="content">
+
+    <h2>What I liked in you so far 😁</h2>
+
+    <p>
+      1. The way you talk, the way you are being bossy already haha
+      <br><br>
+
+      2. Confident, loving yourself, putting yourself first
+      <br><br>
+
+      3. The transformation you talked about and the dedication
+      <br><br>
+
+      4. The way you stay focused and being too bhaneshri.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ================= SECTION 4 ================= -->
+
+<div class="section">
+
+  <!-- bg4 -->
+  <div class="bg" style="background-image:url('bg4.jpg');"></div>
+
+  <div class="content">
+
+    <h2>What I would like to do if we get along online</h2>
+
+    <p>
+      Since you dont live by yourself I wont be able to order you something but instead if you find any alternative I'm down to order for you.
+      <br><br>
+
+      Late night ice cream, small plushie, 2 sided octopus and many more you want to get from me.
+      <br><br>
+
+      Watch movie together or series together or splitsvilla together on google meet
+      <br><br>
+
+      Go on a virtual food date in restaurant or in your own room.
+      <br><br>
+
+      Play online games or study together online
+      <br><br>
+
+      Draw online together (dw I know an app for that)
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ================= SECTION 5 ================= -->
+
+<div class="section">
+
+  <!-- bg5 -->
+  <div class="bg" style="background-image:url('bg5.jpg');"></div>
+
+  <div class="content">
+
+    <h2>Something I would like to feed you</h2>
+
+    <p>
+      Indian but non gujarati- Uttapam, Aloo paratha, appam, sev usal ofc
+      <br><br>
+
+      Non Indian- Pasta
+      <br><br>
+
+      Dessert - Kheer, biscoff cheesecake, brownie with ice cream
+      <br><br>
+
+      Gujarati- vaghareli khichdi, bataka vada, bhakhri pizza and many more.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ================= SECTION 6 ================= -->
+
+<div class="section">
+
+  <!-- bg6 -->
+  <div class="bg" style="background-image:url('bg6.jpg');"></div>
+
+  <div class="content">
+
+    <h2>Something I love to do</h2>
+
+    <p>
+      mostly just bingewatching or reading novels or writing shayari or poetry or writing paragraphs for you
+      <br><br>
+
+      Music I am listening to these days- Indie music or loud music
+      <br><br>
+
+      Artist names- Gini, Nanku, Arpit Bala, W.I.S.H., Sevashi
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ================= SECTION 7 ================= -->
+
+<div class="section">
+
+  <!-- bg7 -->
+  <div class="bg" style="background-image:url('bg7.jpg');"></div>
+
+  <div class="content">
+
+    <h2>Little things which makes me happy</h2>
+
+    <p>
+      Acting all goofy without being judged and accepted T_T
+      <br><br>
+
+      Bol....tu bol 😭😭😭 hu aakho divas sambhdis mane maja aavse yawr.
+      <br><br>
+
+      Watching the movie or series I recommend.
+      <br><br>
+
+      Making me feel included wherever you go or do.
+      <br><br>
+
+      Something I noticed girls like- hanging purse on my shoulder when you give it to me.
+      <br><br>
+
+      Driving with one hand, good hygiene, smelling good, well groomed.
+      <br><br>
+
+      Yes I'll get to the gym and work out just for you.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ================= SECTION 8 ================= -->
+
+<div class="section">
+
+  <!-- bg8 -->
+  <div class="bg" style="background-image:url('bg8.jpg');"></div>
+
+  <div class="content">
+
+    <h2>Ideal date (virtually 🌅)</h2>
+
+    <p>
+      Starting from morning, having coffee or chai together.
+      <br><br>
+
+      Making lunch together and eating together.
+      <br><br>
+
+      Taking afternoon naps or playing games online.
+      <br><br>
+
+      Watching sunset together from nearby places.
+      <br><br>
+
+      Making dinner and watching TMKOC together.
+      <br><br>
+
+      Ordering dessert from D-Spot or having late night ice cream while watching movies.
+    </p>
+
+  </div>
+
+</div>
+
+<script>
+
+const sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', ()=>{
+
+ sections.forEach(sec=>{
+
+  const top = sec.getBoundingClientRect().top;
+
+  if(top < window.innerHeight - 100){
+    sec.classList.add('show');
+  }
+
+ })
+
+});
+
+function toggleMusic(){
+
+ const music=document.getElementById('music');
+
+ if(music.paused){
+   music.play();
+ } else {
+   music.pause();
+ }
+
+}
+
+</script>
+
+</body>
+</html>
